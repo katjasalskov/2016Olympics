@@ -1,89 +1,207 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<style> 
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6; 
-    color: dimgrey;
-  }
+	<head>
+		<title>Rio Olympics 2016</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
 
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Rio Olympics<br />
+						2016</h1>
+						<p>This project will investigate Rio Olympics 2016. What made the medals, who and from where in the world? Furthermore, the olympics 2020 might be cancelled. Did the Olympics 2016 have an impact on happiness in the world and will a cancelation be a disaster? </p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
 
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #002d72;
-    color: white;
-  }
-  
-  .centered-container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-    .box {
-  background-color: lightgrey;
-  width: 100%;
-  padding: 1px;	  
-  }
-	
-  .textbox {
-  width: 1200px;
-  padding-left: 0px;
-  text-align: left;	  
-}
-  
-</style>
-</head>
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Rio 2016 </a>
+					</header>
 
-<body>
+				<!-- Navigations -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Introduction</a></li>
+							<li><a href="generic.html">Olympic Network</a></li>
+							<li><a href="elements.html">A better world?</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/Olympics2016Rio" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/katjasalskov/2016Olympics" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
 
-<div class="topnav">
-  <a class="active" href="/">New York Public Middle Schools</a>
-  <a href="/overview">Overview</a>
-  <a href="/explore">Explore</a>
-  <a href="/findschool">Find School</a>
-</div>
+				<!-- main -->
+					<div id="main">
 
-<center> 
-<div class="textbox">
-  <h2 style="color:#002d72;"> Welcome </h2>
-   This webpage is made as part of the final project in the course <i>02806 Social data analysis and visualization</i> at the Technical University of Denmark (DTU) in the spring 2020.	
-   All data about the middle schools is obtained from <a href="https://data.cityofnewyork.us/browse?category=Education" target="_blank">NYC Open Data</a>. The Python notebook, data and
-	other files used to create this webpage can be found on this <a href="https://github.com/nyc-public-schools/nyc-public-schools.github.io" target="_blank">github</a>.
-   Click on the playbutton in the bottom-left corner and enjoy an introduction to this page.
-</div>
-</center>
-	<p></p>	
+						<!-- Indledende fortælling om at verden er et bedre sted <3 -->
+							<article class="post featured">
+								<header class="major">
+									<h2>The Rio Olympics<br />
+									2016</h2>
+									<p>Once apon a time, when Corona was not a wellknown decease and the<br />
+									litle flowers were still beautifull. <br />
+									The Olympics took place:</p>
+								</header>
+								<!-- First mp4 movie made as presentation of the Olympics -->
+								<div class="centered-container">
+								    <video width="1200" controls>
+<!-- 									  <source src="html figurer/Social Graphs Video Final.mp4" type="video/mp4">
+ 									  <source src="html figurer/Social Graphs Video Final.ogg" type="video/ogg"> -->
+									  <video src="html figurer/Social Graphs Video Final.mp4" width="320" height="200" controls preload></video>
 
-<div class="centered-container">
-    <video width="1200" controls>
-  	  <source src="html figurer/Social Graphs Video Final.mp4" type="video/mp4">
-  	  <source src="html figurer/Social Graphs Video Final.ogg" type="video/ogg">
-  	  Your browser does not support HTML video.
-    </video>
-</div>
-	
-	<p> <br> </p>
-  
-</body>
+								    </video>
+								</div>
+								
+								<ul class="actions special">
+									<li><a href="#" class="button large">Full Story</a></li>
+								</ul>
+							</article>
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2>The Rio Olympics<br />
+									2016 network</h2>
+									<p>The network is based upon a data about the Olympics 2016. <br />
+									All countries, athletes and events are found, followed by there wikipedia pages. <br />
+									Looking at the figure, the network can be seen:</p>
+								</header>
+								<!-- First html code of the big network -->
+								<center>
+								  <iframe src="html figurer/network_all.html" height="700" width="1300"></iframe>
+								</center>
+								
+								<ul class="actions special">
+									<li><a href="#" class="button large">Full Story</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2><a href="#">En rigtig fin <br />
+										Overskrift</a></h2>
+									</header>
+									<!-- first small post -->
+									<center>
+									  <iframe src="html figurer/dist.html" height="400" width="600"></iframe>
+									</center>
+									<p>As we see here, the word are very depended on the Olympics</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="#">Overskrift<br />
+										skrives her</a></h2>
+									</header>
+									<!-- first small post -->
+									<center>
+									  <iframe src="html figurer/dist.html" height="400" width="600"></iframe>
+									</center>
+									<p>Skriv lidt lækker lækker om teksten</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 18, 2017</span>
+										<h2><a href="#">Ante mattis<br />
+										interdum dolor</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 14, 2017</span>
+										<h2><a href="#">Tempus sed<br />
+										nulla imperdiet</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 11, 2017</span>
+										<h2><a href="#">Odio magna<br />
+										sed consectetur</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 7, 2017</span>
+										<h2><a href="#">Augue lorem<br />
+										primis vestibulum</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+							</section>
+
+
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+
+
+								
+									a href="https://www.facebook.com/Olympics2016Rio" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://github.com/katjasalskov/2016Olympics" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
