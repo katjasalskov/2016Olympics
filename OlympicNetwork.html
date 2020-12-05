@@ -77,7 +77,7 @@
 									special structure in how they are connected? In network science, a group of nodes that have a higher likelyhood of connecting<br />
 									to each other than to other groups of nodes are called a community.
 										<a href="http://networksciencebook.com/chapter/9">[Network Science book, Chapter 9]</a>.</p><br />
-									Lets investigate the Networks community structure:</p>
+									Let's investigate the Networks community structure:</p>
 								</header>
 						
 					<!-- COMMUNITY DETECTION  -->
@@ -91,9 +91,9 @@
 
 								
 								<p> The above network show the Olympic network again, now where a community algorithm is run on the data, 
-									and each node is given a specific community. These communities have its own color, to show how each node belong to a community. 
-									The Network is still super complex, but some tendency becomes visiable. Two communities are espacially visible, since they are super dense.
-									These two clusters XXXX
+									and each node is given a specific community. These communities have their own color, to show how each node belongs to a community. 
+									The Network is still super complex, but some tendency becomes visible. Two communities are especially visible since they are super dense.
+									These two clusters XXXX	
 									
 									
 							
@@ -114,13 +114,14 @@
 
 
 								
-								<p>The sizes of each community is very different. Looking at the size of community 0, it is almost 
-								700 nodes. Comparing this to community 25, the size is below 10. How come these sizes be so diffent you might ask.
+								<p>The sizes of each community are very different. Looking at the size of community 0, it is almost 
+								700 nodes. Comparing this to community 25, the size is below 10. How come these sizes be so different you might ask.
 								Well, looking back at the example with the tennis players, we can see that they belong to community XXXXX. This 
-								community is not very big, but it is very dense. This show us, that the more links the nodes have between each others, 
+								community is not very big, but it is very dense. This shows us, that the more links the nodes have between each other, 
 								the more dense and close the community are, but the fewer nodes are included in the community. Looking at the bigger sized 
-								communities, as communiy 0, much more different athletes, countries and events are in the community, but they are more spread out 
-								without nearly as many lonks between each others. </p>
+								communities, as community 0, much more different athletes, countries, and events are in the community, but they are more spread out 
+								without nearly as many links between each other. </p>
+							
 							
 							</article>
 						
@@ -134,12 +135,11 @@
 								<header class="major">
 									<h2>What is each community about?<br /></h2>
 								</header>
-								<p>We would like to get to know each community better. However, besides looking at their connections to each other, what can we do?
-									We have visited every sigle nodes' wikipedia page, to read and understand more about the communities. 
+								<p>We would like to get to know each community better. However, besides looking at their connections with each other, what can we do?
+									We have visited every single nodes' Wikipedia page, to read and understand more about the communities. 
 									Then, an algorithm, called TF-IDF (<i>Term frequency–Inverse document frequency</i>) is used to find the important words in each community. You can read more about this
 									<a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">[here]</a>.</p><br />.
-									The main important words from each community is plottet in the following as wordclouds. Try and see if you can explain anything about the different communities, by looking at these word clouds. 
-									 
+									The main important words from each community are plotted in the following as word clouds. Try and see if you can explain anything about the different communities, by looking at these word clouds.
 									</p>
 							
 
@@ -154,8 +154,10 @@
 
 								<p>Cool right? <br />
 								What have you discovered? <br />
-									To be honest, the themes of the communities did not become very clear from these word clods. Apparently, the algorithm did not work as well as we
-									wished. It turns out, the it is difficult to 
+									<p>To be honest, the themes of the communities did not become very clear from these word clouds. The algorithm did not work as well as we
+									wished. It turns out, that it is difficult to identify the important words when you mix the type of content in the Wikipedia pages. 
+									However, we get the feeling, that the communities are based upon the athletes' nationality and or the sport that they have in common. <br />
+									OK. Maybe we should try and investigate the athletes' network as a sub-network to the big Olympic Network? This might reveal more information when looking at the Wikipedia pages. 
 								</p>
 							
 							</article>
