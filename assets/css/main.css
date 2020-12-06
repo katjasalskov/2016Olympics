@@ -4692,11 +4692,7 @@ input, select, textarea {
 	.hover_img a span { position:absolute; display:none; z-index:99; }
 	.hover_img a:hover span { display:block; }
 
-body{
-  font-size: 20px;
-  font-family: sans-serif;
-  color: #333;
-}
+
 .question{
   font-weight: 600;
 }
