@@ -144,12 +144,12 @@
 									Why is that and who are these athetes? <br />
 									<br />
 										In Network science there are something called <i>strong</i> and <i>weak</i> communities. This is defined by how many cliques the community has. 
-									A cliques in a network corresponds to a complete (fully connected) subgraph, where all the nodes are connected to each other. 
+									A clique in a network corresponds to a complete (fully connected) subgraph, where all the nodes are connected. 
 									<br />
 										
-									If a community is having many cliques, and thereby makes every node within the community have more links to each other than to other nodes outside the community, 
-									it is defined as a strong community. It the opposite occur, the community is a weak community.
-										Looking at the connected athletes network, community <b>XX and XX </b> are cleary strong communities, only determined by the density of the comunity. 
+									If a community is having many cliques and thereby makes every node within the community have more links to each other than to other nodes outside the community, 
+									it is defined as a strong community. If the opposite occurs, the community is a weak community.
+										Looking at the connected athletes' network, community <b>XX and XX </b> are clearly strong communities, only determined by the density of the community. 
 									But investigating the number of cliques inside the two sommunities also revieal that this is true. The biggest clique in all of the olympic network is 
 										found in <b>community XXX.</b> </p>
 
@@ -167,7 +167,7 @@
 									is called fully connected. Try visit <a href="https://en.wikipedia.org/wiki/Serena_Williams">[Serena Williams]</a> Wikipedia page, and see if you can find 
 									the 16 female tennis players that her page links to. <br />
 									<br />
-									But can we detect the communities even more, and maybe spot which sport isolates athletes from other sports, and which sports that might connect atheltes accross sports.</p>
+									But can we detect the communities even more, and maybe spot which sport isolates athletes from other sports, and which sports that might connect athletes across sports.</p>
 							
 							</article>
 
@@ -183,7 +183,7 @@
 									<p><span class="image left"><img src="images/comsizedist.jpg" alt="" /></span> <p>First we will look at the 
 									distribution of the sizes in the different communities. We see the same tendency now as for the big <a href="OlympicNetwork.html" >Olympic Network</a>.
 									Few communities contain many athletes and then more communities contain fewer athletes.
-									Are the big communities the including communiies, where everyone is welcome?</p>
+									Are the big communities including communities, where everyone is welcome?</p>
 .</p>
 <!-- 									<p><span class="image right"><img src="images/pic09.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p> -->
 									<hr />
@@ -197,11 +197,10 @@
 							<article>
 								<header class="major">
 									<h2>Wordcloud for communities<br /></h2>
-									<p>xommunity tekst<br />
-									 <br />
-									</p>
+		
 								</header>
-						
+						<p> Start by explaining the word clouds here... depending on how and which plots you want in. 
+								</p> 
 							<!-- PLOT WORDCLOUDt-->
 								<center>
 								  <div class='fill-screen'>
@@ -215,62 +214,42 @@
 								<p>Her skrives endnu mere om communities. Evt sæt en forklaring ind omkring hvordan vi kigger på hver kommunity.</p>
 							
 							</article>
-						
-								
-								
-								
-								
-								
-								
-								
-							<section class="posts">
-								
-								
-								
-								
-								
+<!--   SENTIMENT ANALYSE -->
 								<article>
-									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-
-								</article>
-								<article>
-									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-
+								<header class="major">
+									<h2>Evaluation of communities<br /></h2>
+		
+								</header>
+						<p>From the wordclouds, it became clear that the athletes have their sport in common 
+							withon their community. 
+							
+							But what about the mood in each community? We have all heart the rumers that 
+							some sports are collaborative an knowledge sharing, whereas other sports 
+							are much more individual and competitive. Would this be possible to investigate? </b>
+						There are something called <i> sentiment analysis. </i> This is an analysis that takes 
+						the given text and give each word in the text an average sentiment value. 
+						In the end, you can take the average sentiment value of the whole text, and determine its average sentiment. </b>
+				Maybe this is possible with the communities? Let's read all the Wikipedia pages in each community and calculate the average sentiment. 
+								</p> 
+	<!-- PLOT SENTIMENT-->
+								<center>
+								  <div class='fill-screen'>
+ 								    <span class="image fit"><img src="images/wordC.jpg" alt="" /></span>								    
+								  </div>
 									
-								</article>
-								<article>
-									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+								</center>
 
-								</article>
-								<article>
-									<header>
-										<span class="date">April 7, 2017</span>
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
 
-								</article>
-							</section>
+								
+								<p>Her skrives endnu mere om communities. Evt sæt en forklaring ind omkring hvordan vi kigger på hver kommunity.</p>
+							
+							</article>
+								
+								
+								
+								
+								
+							
 
 
 
