@@ -260,22 +260,22 @@
 
 var myQuestions = [
   {
-    question: "What is 10/2?",
+    question: "Which sport does Katja Salskov-Iversen compete in?",
     answers: {
-      a: '3',
-      b: '5',
-      c: '115'
+      a: 'Sailing',
+      b: 'Equestrian',
+      c: 'Rowing'
     },
-    correctAnswer: 'b'
+    correctAnswer: 'a'
   },
   {
-    question: "What is 30/3?",
+    question: "How many in-degrees does Katja Salskov-Iversen has in the network?",
     answers: {
-      a: '3',
-      b: '5',
+      a: '0',
+      b: '4',
       c: '10'
     },
-    correctAnswer: 'c'
+    correctAnswer: 'b'
   }
 ];
 
