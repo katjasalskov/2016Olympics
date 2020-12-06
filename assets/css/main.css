@@ -4691,3 +4691,31 @@ input, select, textarea {
 	.hover_img a { position:relative; }
 	.hover_img a span { position:absolute; display:none; z-index:99; }
 	.hover_img a:hover span { display:block; }
+
+body{
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #333;
+}
+.question{
+  font-weight: 600;
+}
+.answers {
+    margin-bottom: 20px;
+}
+#submit{
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: #297;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+#submit:hover{
+  background-color: #3a8;
+}
+
+
