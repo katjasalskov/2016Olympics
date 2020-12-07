@@ -258,10 +258,10 @@
 })(jQuery);
 
 
-var form1 = document.querySelector("form1");
+var form = document.querySelector("form");
 var log1 = document.querySelector("#log1");
 
-form1.addEventListener("submit", function(event) {
+form.addEventListener("submit", function(event) {
   var data = new FormData(form);
   var output = "";
   for (const entry of data) {
@@ -271,10 +271,10 @@ form1.addEventListener("submit", function(event) {
   event.preventDefault();
 }, false);
 
-var form2 = document.querySelector("form2");
+var form = document.querySelector("form");
 var log2 = document.querySelector("#log2");
 
-form2.addEventListener("submit", function(event) {
+form.addEventListener("submit", function(event) {
   var data = new FormData(form);
   var output = "";
   for (const entry of data) {
