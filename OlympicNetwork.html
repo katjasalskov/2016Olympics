@@ -68,23 +68,23 @@
 								
 								<p>
 								The Olympic Games 2016's countries, sports and athletes are connected across the board. 
-									This can be seen by all the orange links between the red, green and blue nodes on the above netowrk. 
+									This can be seen by all the orange links between the red, green, and blue nodes on the above network. 
 								
 								The size of each node is explaining how many links each node has, and the colors
-								tell whether the node is a country, a sport or an athlete at the Olympcs in Rio 2016.
+								tell whether the node is a country, a sport, or an athlete at the Olympics in Rio 2016.
 								<br />
-								By looking at the network, we can see that the countries in general have the most links. 
+								By looking at the network, we can see that the countries, in general, have the most links. 
 									This make sense, due to the fact that each countrys' Wikipedia page link to all the 
 									athletes representing their nation. Furthermore each sport are also listing all the athletes
 									in that speecific sport competing at he Olympics in Rio. <br /> 
 									
-									The Olympic graph inlighten a clear national tendency, where big red nodes all link to the green athlete nodes of their country.
+									The Olympic graph inlightens a clear national tendency, where big red nodes all link to the green athlete nodes of their country.
 									 
 									Furthermore, there are some groups of nodes, that are more connected than others. As an
 									example, the green, very big and dense looking 
 									clusters in the right bottom side of the network. Both clusters look like they are linking to the same 
 									sport (the blue node to the right of them).  <br /> 
-									Lets see if this is true. 
+									 
 									 
 								</p>
 
@@ -96,7 +96,8 @@
 									<p>In network science, a group of nodes that have a higher likelyhood of connecting
 									to each other than to other groups of nodes are called a community. Interested in this theory? Try look at
 										<a href="http://networksciencebook.com/chapter/9">[Network Science book, Chapter 9]</a>.<br />
-									Let's investigate the Olympics community structure:</p>
+									Just by looking at the above Olympic Network, we can see that some of the nodes probably have a higher chance of linking to each other than to other nodes.
+										Let's investigate the Olympics community structure:</p>
 						
 					<!-- COMMUNITY DETECTION  -->
 								<center>
@@ -108,12 +109,14 @@
 
 
 								
-								<p> The above network show the Olympic network, now where a community algorithm is run on the data, 
-									and each node is given a specific community. These communities have their own color, that show how each node belongs to a community. 
-									The Network is still super complex, but some tendency becomes visible. Two communities are especially visible since they are super dense.
-									FORKLAR MERE TIL DENNE 	
+								<p> The above graph shows the Olympic network, now where a community algorithm is run on the data.
+									Now each node belongs to a community which is visualized by specific community colors. 
+									The Network is still super complex, but some tendency becomes visible. As discovered earlier, the two very dense clusters 
+									do have more likelihood of connecting inside the cluster than to anyone ells, which is why they have become respectively community 
+									17 and 21. Furthermore, the graph shows that the athletes from the same country are most likely to be in a community together. 
 									
-									Is is still difficult to interpret much from this visulasation. Lets continue to detect the sizes of the communities: 
+									
+									It is still difficult to interpret much from this visualization. Let's continue the investigation by detecting the sizes of the communities: 
 									
 									
 							
@@ -123,7 +126,8 @@
 									<h3>Community sizes<br /></h3>
 								</header>
 								<p>The number of athletes, countries and sports (nodes) are counted for each of the <b>28 communities </b> and plottet below.
-								The x-axis show the community number where the y-axis show the community size.</p>
+								The x-axis the communities where the y-axis shows the community size. Be aware that the x-axis does not correspond to the real community number, since the plot is sorted
+								showing the largest community as community 0.</p>
 						
 			<!-- COMMUNITY SIZES-->
 								<center>
@@ -135,14 +139,12 @@
 
 
 								
-								<p>Looking at the plot, it is shown that the community sizes are very different.
-								Looking at the size of community 0, it is almost 700 nodes. Comparing this to community 25, the size is below 10. 
-								How come these sizes be so different you might ask.
-								<b>Well, looking back at the example with the tennis players, we can see that they belong to community <b>XXXXX</b>. This 
-								community is not very big, but it is very dense. This shows us, that the more links the nodes have between each other, 
-								the more dense and close the community are, but the fewer nodes are included in the community. Looking at the bigger sized 
-								communities, as community 0, much more different athletes, countries, and events are in the community, but they are more spread out 
-								without nearly as many links between each other.</b> </p>
+								<p>Looking at the plot, the size of each community is very different.
+								Looking at the size of the largest community, it contain more than 500 nodes. Comparing this to community 25, the size is below around 20. 
+								How come the size of the communities be so different you might ask. <br />
+								Let's try and find out! 
+									
+								</p>
 							
 							
 							</article>
