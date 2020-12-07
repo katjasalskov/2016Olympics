@@ -259,27 +259,16 @@
 
 
 var form = document.querySelector("form");
-var log1 = document.querySelector("#log1");
+var log = document.querySelector("#log");
 
 form.addEventListener("submit", function(event) {
   var data = new FormData(form);
   var output = "";
   for (const entry of data) {
-    output = output + entry[0] + "=" + entry[1] + "\r";
+    output = output + entry[0] + " is " + entry[1] + "\r";
   };
-  log1.innerText = output;
+  log.innerText = output;
   event.preventDefault();
 }, false);
 
-var form = document.querySelector("form");
-var log2 = document.querySelector("#log2");
 
-form.addEventListener("submit", function(event) {
-  var data = new FormData(form);
-  var output = "";
-  for (const entry of data) {
-    output = output + entry[0] + "=" + entry[1] + "\r";
-  };
-  log2.innerText = output;
-  event.preventDefault();
-}, false);
