@@ -258,15 +258,28 @@
 })(jQuery);
 
 
-var form = document.querySelector("form");
-var log = document.querySelector("#log");
+var form1 = document.querySelector("form1");
+var log1 = document.querySelector("#log1");
 
-form.addEventListener("submit", function(event) {
+form1.addEventListener("submit", function(event) {
   var data = new FormData(form);
   var output = "";
   for (const entry of data) {
     output = output + entry[0] + "=" + entry[1] + "\r";
   };
-  log.innerText = output;
+  log1.innerText = output;
+  event.preventDefault();
+}, false);
+
+var form2 = document.querySelector("form2");
+var log2 = document.querySelector("#log2");
+
+form2.addEventListener("submit", function(event) {
+  var data = new FormData(form);
+  var output = "";
+  for (const entry of data) {
+    output = output + entry[0] + "=" + entry[1] + "\r";
+  };
+  log2.innerText = output;
   event.preventDefault();
 }, false);
