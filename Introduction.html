@@ -53,23 +53,23 @@
 									<h2>Data Olympic RIO 2016</h2>
 									
 									<p> 
-									Now we want to introduce you to the Olympic 2016 data and the Olympic Network. Have fun!	
+									An introduction to the Olympic Games in Rio 2016 data and the Olympic Network. Have fun!	
 									</p>
 								</header>
 					<!-- THE BIG NETWORK -->
 							
 								<center>
 									<p>All of our analysis is based on datasets downloaded from <a href="https://www.kaggle.com/rio2016/olympic-games" target="_blank">Kaggle</a> 
-										and texts scraped from Wikipedia pages of Countries, Sports, and Athelets from the Olympic 2016.										
-										Below is presented an exciting example of what a Wikipedia page of a random athlete participating at the Olympic 2016 looks like.</p>
+										and texts scraped from Wikipedia about Countries, Sports and Athletes participating at the Olympic Games in 2016.										
+										Below is presented an exciting example of what a Wikipedia page of a random athlete participating at the Olympic Games in 2016 looks like.</p>
 									<div class='fill-screen'>
 									<iframe src="https://en.wikipedia.org/wiki/Katja_Salskov-Iversen" style="height:400px;width:850px;"> </iframe>
 								  	</div>
 									
 									<p>   	<br/>
-										We want to create an Olympic Network of the Countries, Sports, and Athletes to see how they connect. 
-										So therefore all the Wikipedia pages of Countries, Sports, and Athletes (if the athlete has a Wikipedia page) were downloaded.
-										These Wikipedia pages will act as nodes in the network and the links between the Wikipedia pages will act like links in the network.
+										This project has createed an Olympic Network of the Countries, Sports, and Athletes to see how they connect. 
+										All the Wikipedia pages of Countries, Sports, and Athletes (if the athlete has a Wikipedia page) have been downloaded, where  
+										these Wikipedia pages will act as nodes in the network and the links between the Wikipedia pages will act like links in the network.
 										A visualization of the network can be seen below.</p>
 
 
@@ -77,18 +77,18 @@
 									
 									
 									<div class='fill-screen'>
- 								    	<span class="image fit"><img src="images/OL_Network.PNG" alt="" /></span>								    
+ 								    	<span class="image fit"><img src="images/OL_Network.jpg" alt="" /></span>								    
 								  	</div>
 									
 								</center>
-								<p>For an interactive visualization of the network, click on the example below and try play with the network yourself:<br/> 
+								<p>Click on the example below for an interactive visualization of the network, and try play with the network yourself:<br/> 
 									
 									<div class='fill-screen'>
 										<a href="network/index.html" target="_blank" class="image fit">
         									 <img alt="" src="images/networkZip.gif" width="800"> </a>
 									</div>
 									<br/>
-									Cool right... But we would still like you to know more about the network, so please continue &hearts;  </p>
+									Cool right... But there are still much more to discover about this network, so please continue &hearts;  </p>
 							</article>
 
 								
@@ -104,20 +104,28 @@
 						
 					<!-- BASIC STATS -->
 								<center>
-									<p> It is important to get to know the network by its basic statistics and structure. This will give you a nice feeling, 
+									<p> To understand a network, you need to start by its basic statistics and structure. This will give you a nice feeling, 
 										that you will know which type of network you are working with and how nodes are connected in the network. The Olympic Network is 
-										a directed network, which means that node A can link to node B, but node B does not necessarily link to node A. <br/>
+										a directed network, which means that a node, ex.
+										<a href="https://en.wikipedia.org/wiki/Denmark_at_the_2016_Summer_Olympics" target="_blank">[Denmark]</a>
+										links to 
+										<a href="https://en.wikipedia.org/wiki/Katja_Salskov-Iversen" target="_blank">[Katja Salskov-Iversen]</a>,
+										but Katja does not link to Denmark. This implies one directed link between the two nodes.
+										
+										 <br/>
 										<br/>
-										The Olympic Network has <b>5.463 nodes</b> and <b>16.306 links</b>
+										The Olympic Network has <b>5.463 nodes</b> and <b>16.306 links</b> spread out amongst the Countries, sports and athletes. 
 										<br/>
 										<br/>
-										We want to investigate the properties of the nodes. Let's start by finding links in and out of each node, this is also called the degree. 
-										The average degree of the total Olympic network is <b>5,97</b>. The average is sensitive to large in and/or out degrees. Therefore it is interesting to study the median 
+										This project investigates the properties of the nodes. Let's start by finding links in and out of each node, which is also called the node degree. 
+										The average degree of the total Olympic network is <b>5,97</b>. The average is sensitive to large in- and/or out degrees. Therefore it is interesting to study the median 
 										for the in- and out-degrees. The median is stable to nodes with extreme degrees. The median for in-degree is <b>2</b>, which tells us that most nodes have very few in-degrees. 
 										For out-degree, the median is <b>0</b>, which means that most of the nodes are not linking to other nodes. <br/>
 										<br/>
-										Okay, so the network has many nodes with a low degree and very few with a high degree. Which corresponds to a power law and that the network has a <i>hub-structure</i>. 
-										A set of nodes where almost every node or at least many of the nodes link to is called a hub. This network structure is the main property in many real-world networks and it
+										OK, so the network has many nodes with a low degree and very few with a high degree. This corresponds to a <i>power law</i> and that the network has a <i>hub-structure</i>. 
+										A set of nodes where almost every node or at least many of the nodes link to is called a hub. Thinking about it, for the Olympic Network this makes sense. The Countries 
+										are all linking to all the atheltes that are representing the country, which mean that all countries (espacially the big once at the Olympics), quickly become a <i>hub</i>.
+										This network structure is the main property in many real-world networks and it
 										is also called <i>a Scale-free Network.</i> By having this network structure knowledge, further analysis will be more interesting and hopefully more successful.
 
 									
