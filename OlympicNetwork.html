@@ -76,7 +76,7 @@
 								By looking at the network, we can see that the countries, in general, have the most links. 
 									This make sense, due to the fact that each countrys' Wikipedia page link to all the 
 									athletes representing their nation. Furthermore each sport are also listing all the athletes
-									in that speecific sport competing at he Olympics in Rio. <br /> 
+									in that speecific sport competing at the Olympics in Rio. <br /> 
 									
 									The Olympic graph inlightens a clear national tendency, where big red nodes all link to the green athlete nodes of their country.
 									 
@@ -94,7 +94,7 @@
 									<h2>Community detection<br /></h2>
 								</header>
 									<p>In network science, a group of nodes that have a higher likelyhood of connecting
-									to each other than to other groups of nodes are called a community. Interested in this theory? Try look at
+									to each other than to other groups of nodes are called a community. Interested in the theory behind? Take a look at
 										<a href="http://networksciencebook.com/chapter/9">[Network Science book, Chapter 9]</a>.<br />
 									Just by looking at the above Olympic Network, we can see that some of the nodes probably have a higher chance of linking to each other than to other nodes.
 										Let's investigate the Olympics community structure:</p>
@@ -109,14 +109,14 @@
 
 
 								
-								<p> The above graph shows the Olympic network, now where a community algorithm is run on the data.
-									Now each node belongs to a community which is visualized by specific community colors. 
+								<p> The above graph shows the Olympic network now, where a community algorithm is run on the data.
+									Now each node belongs to a community which is visualized by the specific community colors. 
 									The Network is still super complex, but some tendency becomes visible. As discovered earlier, the two very dense clusters 
-									do have more likelihood of connecting inside the cluster than to anyone ells, which is why they have become respectively community 
+									do have more likelihood of connecting inside the cluster than to anyone else, which is why they have become the respectively community 
 									17 and 21. Furthermore, the graph shows that the athletes from the same country are most likely to be in a community together. 
 									
 									
-									It is still difficult to interpret much from this visualization. Let's continue the investigation by detecting the sizes of the communities: 
+									It is still difficult to interpret much from this visualization. Let's continue the investigation by detecting the size of the communities: 
 									
 									
 							
@@ -126,7 +126,7 @@
 									<h3>Community sizes<br /></h3>
 								</header>
 								<p>The number of athletes, countries and sports (nodes) are counted for each of the <b>28 communities </b> and plottet below.
-								The x-axis the communities where the y-axis shows the community size. Be aware that the x-axis does not correspond to the real community number, since the plot is sorted
+								The x-axis corresponds to the communities where the y-axis shows the community size. Be aware that the x-axis does not correspond to the real community number, since the plot is sorted
 								showing the largest community as community 0.</p>
 						
 			<!-- COMMUNITY SIZES-->
@@ -140,9 +140,9 @@
 
 								
 								<p>Looking at the plot, the size of each community is very different.
-								Looking at the size of the largest community, it contains more than 500 nodes. Comparing this to community 25, the size is below around 20. 
+								Looking at the size of the largest community, it contains more than 500 nodes. Comparing this to the smallest community, the size is below 20. 
 								How come the sizes of each community be so different you might ask. <br />
-								Let's try and find out by investigating what each node's Wikipedia page is about! 
+								Let's try and find out by investigating what each node's Wikipedia page is all about! 
 									
 								</p>
 							
@@ -164,7 +164,7 @@
 									This have already been done for you, and all the words for each community have been collected. 
 									Then, an algorithm, called TF-IDF (<i>Term frequency–Inverse document frequency</i>) has been used to find the important words in each community. You can read more about this
 									<a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">[here]</a>.<br />
-									The main important words from the first eight communities are plotted in the following word clouds. 
+									The most important words from the first eight communities are plotted in the following word clouds. 
 								Try and see if you can explain anything about the different communities, by looking at these word clouds.
 									</p>
 							
@@ -182,12 +182,12 @@
 								What have you discovered? <br />
 									<p>To be honest, the themes of the communities did not become very clear from these word clouds. The algorithm did not work as well as
 									wished. Try visit 
-										<a href="https://en.wikipedia.org/wiki/Brazil_at_the_2016_Summer_Olympics">[Brazils Wikipedia page]</a>. How many times are the word *birth* counted?
+										<a href="https://en.wikipedia.org/wiki/Brazil_at_the_2016_Summer_Olympics">[Brazils Wikipedia page]</a>. How many times are the word <i>birth<i> counted?
 										Yes. 11 times. Now try visit 
 										<a href="https://en.wikipedia.org/wiki/Martine_Grael">[Martine Graels Wikipedia page]</a>. 
 										How many times are the word *birth* counted on her page?
 										Correct. 0 times. This is the case for athletes versus countries Wikipedia pages. 
-										Because of the TF-IDF calculations, the word <i> birth </i> gets a lot of saying in each community where countries are a part of the community. 
+										Because of the TF-IDF calculations, the word <i>birth</i> gets a lot of saying in each community where countries are a part of the community. 
 										
 										It turns out, that it is difficult to identify the important words when you mix the type of content in the Wikipedia pages (e.g both reading countries, sports, and athletes Wikipedia pages).
 										This is especially difficult when there are not equally many nodes of each three categories. 
