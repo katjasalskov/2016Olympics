@@ -99,7 +99,7 @@
 									Just by looking at the above Olympic Network, we can see that some of the nodes probably have a higher chance of linking to each other than to other nodes.
 										Let's investigate the Olympics community structure:</p>
 						
-					<!-- COMMUNITY DETECTION  -->
+	<!-- COMMUNITY DETECTION  -->
 								<center>
 								  <div class='fill-screen'>
  								    <span class="image fit"><img src="images/OLcom.jpg" alt="" /></span>								    
@@ -140,9 +140,9 @@
 
 								
 								<p>Looking at the plot, the size of each community is very different.
-								Looking at the size of the largest community, it contain more than 500 nodes. Comparing this to community 25, the size is below around 20. 
-								How come the size of the communities be so different you might ask. <br />
-								Let's try and find out! 
+								Looking at the size of the largest community, it contains more than 500 nodes. Comparing this to community 25, the size is below around 20. 
+								How come the sizes of each community be so different you might ask. <br />
+								Let's try and find out by investigating what each node's Wikipedia page is about! 
 									
 								</p>
 							
@@ -159,16 +159,18 @@
 								<header class="major">
 									<h2>What is each community about?<br /></h2>
 								</header>
-								<p>We would like to get to know each community better. However, besides looking at their connections with each other and the size of them, what can we do?
-									We have visited every single nodes' Wikipedia page, to read and understand more about the communities. 
-									Then, an algorithm, called TF-IDF (<i>Term frequency–Inverse document frequency</i>) is used to find the important words in each community. You can read more about this
-									<a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">[here]</a>.</p><br />.
-									The main important words from each community are plotted in the following word clouds. Try and see if you can explain anything about the different communities, by looking at these word clouds.
+								<p>Besides looking at the nodes' connections to each other and the size of them, how can you obtain more knowledge about the nodes?
+									What about visiting every single nodes' Wikipedia page, to read and understand more about them and maybe even understand why they are in the specific community? 
+									This have already been done for you, and all the words for each community have been collected. 
+									Then, an algorithm, called TF-IDF (<i>Term frequency–Inverse document frequency</i>) has been used to find the important words in each community. You can read more about this
+									<a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">[here]</a>.<br />
+									The main important words from the first eight communities are plotted in the following word clouds. 
+								Try and see if you can explain anything about the different communities, by looking at these word clouds.
 									</p>
 							
 
 						
-							<!-- PLOT WORDCLOUDt-->
+				<!-- PLOT WORDCLOUDt-->
 								<center>
 								  <div class='fill-screen'>
  								    <span class="image fit"><img src="images/wordC.jpg" alt="" /></span>								    
@@ -178,10 +180,14 @@
 
 								<p>Cool right? <br />
 								What have you discovered? <br />
-									<p>To be honest, the themes of the communities did not become very clear from these word clouds. The algorithm did not work as well as we
-									wished. It turns out, that it is difficult to identify the important words when you mix the type of content in the Wikipedia pages. 
+									<p>To be honest, the themes of the communities did not become very clear from these word clouds. The algorithm did not work as well as
+									wished. 
+										It turns out, that it is difficult to identify the important words when you mix the type of content in the Wikipedia pages (e.g both reading countries, sports and athletes Wikipedia pages).
+										This is especially difficult then there are not equally many of each three categories. 
+										 
 									However, we get the feeling, that the communities are based upon the athletes' nationality and or the sport that they have in common. <br />
-										As an example, we can see that community <b> XXXX is filled with words about swimming. </b>
+										As an example, we can see that community 0 is probably having the <i>Philippine</i> in common, and community 8 might have <i>golf</i> in common.
+										<br />
 									OK. Maybe we should try and investigate the athletes' network as a sub-network to the big Olympic Network? This might reveal more information when looking at the Wikipedia pages. 
 								</p>
 								<ul class="actions special">
